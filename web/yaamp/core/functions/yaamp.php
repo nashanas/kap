@@ -68,6 +68,7 @@ function yaamp_get_algos()
 		'yescryptR32',
 		'whirlpool',
 		'zr5',
+		'blake2b',
 	);
 }
 
@@ -81,6 +82,7 @@ function yaamp_algo_mBTC_factor($algo)
 	case 'blake':
 	case 'blakecoin':
 	case 'blake2s':
+	case 'blake2b':
 	case 'decred':
 	case 'keccak':
 	case 'keccakc':
@@ -259,6 +261,7 @@ function getAlgoPort($algo)
 		'decred'	=> 3252,
 		'vanilla'	=> 5755,
 		'blake2s'	=> 5766,
+		'blake2b'	=> 5767,
 		'penta'		=> 5833,
 		'luffa'		=> 5933,
 		'm7m'		=> 6033,
